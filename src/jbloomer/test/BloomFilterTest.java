@@ -57,4 +57,13 @@ public class BloomFilterTest extends TestCase {
 			set.clear();
 		}
 	}
+	
+	public void testEmpty() {
+		Random random = new Random();
+		
+		for (int size=10; size < 1000 * 1000; size *= 2) {
+			BloomFilter bloom = new BloomFilter(size, 0.01);
+			assertFalse(bloom.contains(random.nextInt()));
+		}
+	}
 }

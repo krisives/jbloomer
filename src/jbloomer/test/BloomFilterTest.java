@@ -28,7 +28,6 @@ public class BloomFilterTest extends TestCase {
 	}
 	
 	public void testOneByOne() {
-		
 		Random random = new Random();
 		
 		for (int count=10; count < 1000 * 1000; count *= 2) {

@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.org/krisives/jbloomer.svg?branch=master)](https://travis-ci.org/krisives/jbloomer)
+
 # jbloomer
 
 A simple Java library for [Bloom Filters](https://en.wikipedia.org/wiki/Bloom_filter).

@@ -33,7 +33,9 @@ Later you can check if a key has been added to the filter:
 
 ```
 if (filter.contains(ip)) {
-	throw new Exception("IP is blacklisted");
+	if (expensiveQuery.contains(ip)) {
+		throw new Exception("IP is blacklisted");
+	}
 }
 ```
 
